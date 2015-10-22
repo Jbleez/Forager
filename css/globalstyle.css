@@ -1,0 +1,176 @@
+
+@font-face{
+
+    font-family: 'MisoRegular';
+
+    src: url('../fonts/miso-webfont.eot');
+
+    src: url('../fonts/miso-webfont.eot?#iefix') format('eot'),
+
+         url('../fonts/miso-webfont.woff') format('woff'),
+
+         url('../fonts/miso-webfont.ttf') format('truetype'),
+
+         url('../fonts/miso-webfont.svg#webfontk1DRByuk') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+	}	
+
+
+@font-face{ 
+      font-family: 'WebSymbolsLigaRegular';
+          src: url('../fonts/WebSymbolsLiga-Regular/websymbolsligaregular.eot');
+          src: url('../fonts/WebSymbolsLiga-Regular/websymbolsligaregular.eot?#iefix') format('embedded-opentype'),
+               url('../fonts/WebSymbolsLiga-Regular/websymbolsligaregular.woff') format('woff'),
+               url('../fonts/WebSymbolsLiga-Regular/websymbolsligaregular.ttf') format('truetype'),
+               url('../fonts/WebSymbolsLiga-Regular/websymbolsligaregular.svg') format('svg');
+}
+
+ .symbol{font-family: 'WebSymbolsLigaRegular';
+		 font-size: 100px;
+		 color: white;}
+
+.symbol:hover{
+	color: rgb(230,230,204);
+	}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+	color: #5a5350;
+	font-weight: 300;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	font-family: 'MisoRegular';
+	font-size:12px;
+
+}
+
+a {
+	text-decoration: none;
+	color: #ed8151;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #e86a32;
+	outline: none;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: " ";
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+
+.main {
+	max-width: 2000px;
+	background:url('../images/random_grey_variations.png') repeat;
+}
+
+
+.column {
+	float: left;
+	min-height: 300px;
+	position: relative;
+	text-align: right;
+	border-right-color: black;
+}
+
+.column1{
+width:10%;
+padding:0;
+margin-left:-50px;
+}
+
+.column2{
+width:90%;
+	padding: 0 0.5em;
+}
+
+.column:nth-child(2) {
+	box-shadow: -1px 0 0 rgba(0,0,0,0.1);
+	text-align: left;
+}
+
+.column p {
+	font-weight: 300;
+	font-size: 2em;
+	padding: 0 0 0.5em;
+	margin: 0;
+	line-height: 1.5;
+}
+
+
+button {
+	border: none;
+	background: transparent;
+	outline: none;
+}
+
+
+
+button {
+	font-size: 75%;
+	
+}
+
+button:hover,
+button:active {
+	 border: none;
+	background: transparent;
+	outline: none;
+    content:"";
+   
+}
+
+#statusoftheprocess{
+
+	color:white;
+	margin-left: 30%;
+	font-size:25px;
+}
+
+.related {
+	text-align: center;
+	font-size: 1.5em;
+	margin-top: 3em;
+	clear: both;
+	padding: 3em 0;
+}
+
+.related a {
+	font-weight: 700;
+	font-size: 0.9em;
+}
+
+@media screen and (max-width: 46.0625em) {
+
+	
+	.column {
+		width: 100%;
+		min-width: auto;
+		min-height: 0;
+		padding: 2em; 
+		text-align: center;
+	}
+
+	.column p {
+		font-size: 1.5em;
+	}
+
+	.column:nth-child(2) {
+		text-align: center;
+		box-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+	}
+}
+
